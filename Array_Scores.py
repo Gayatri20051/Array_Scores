@@ -9,6 +9,14 @@ def calculate_average(scores):
         return 0
     return sum(scores) / len(scores)
 
+def find_min(scores):
+    """find minimum score."""
+    return min(scores)
+
+def find_max(scores):
+    """find maximum score."""
+    return max(scores)
+
 if __name__ == "__main__":
     print("=== Array Scores Processor (main branch) ===")
     try:
@@ -31,9 +39,13 @@ if __name__ == "__main__":
 
         total = calculate_sum(scores)
         avg = calculate_average(scores)
+        min = find_min(scores)
+        max = find_max(scores)
 
         print(f"\nSum of scores = {total}")
         print(f"Average of scores = {avg:.2f}")
+        print(f"Minimum = {min}")
+        print(f"Maximum = {max}")
 
     except Exception as e:
         print("An error occurred:", e)
