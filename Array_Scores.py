@@ -41,7 +41,7 @@ if __name__ == "__main__":
         avg = calculate_average(scores)
         min = find_min(scores)
         max = find_max(scores)
-
+       #Prints the output
         print(f"\nSum of scores = {total}")
         print(f"Average of scores = {avg:.2f}")
         print(f"Minimum = {min}")
